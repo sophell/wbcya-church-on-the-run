@@ -9,12 +9,14 @@ MILES_PER_KILOMETRE = 0.621371
 GOAL_MILES = 388
 DATA_DIR = Path(__file__).parent
 
-st.sidebar.title("WBCYA Church on the Run")
-st.sidebar.header("Fundraising Link")
+st.sidebar.title("WBCYA Run Club: Church on the Run")
+# st.sidebar.header("Fundraising Link:")
 st.sidebar.markdown("[JustGiving Page](https://www.justgiving.com/page/windsor-run-club)")
 
 st.title("WBCYA Church on the Run Fundraiser")
-st.header("Last updated: 14/11/12 18:00")
+st.markdown("Last updated: 14/11/12 18:00")
+
+st.divider()
 
 daily_distances = pd.read_csv(DATA_DIR / "Church On The Run - DailyTotals.csv")
 participant_distances = pd.read_csv(DATA_DIR / "Church On The Run - ParticipantTotals.csv")
