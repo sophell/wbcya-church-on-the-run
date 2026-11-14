@@ -14,6 +14,7 @@ st.sidebar.header("Fundraising Link")
 st.sidebar.markdown("[JustGiving Page](https://www.justgiving.com/page/windsor-run-club)")
 
 st.title("WBCYA Church on the Run Fundraiser")
+st.header("Last updated: 14/11/12 18:00")
 
 daily_distances = pd.read_csv(DATA_DIR / "Church On The Run - DailyTotals.csv")
 participant_distances = pd.read_csv(DATA_DIR / "Church On The Run - ParticipantTotals.csv")
